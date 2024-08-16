@@ -17,6 +17,11 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.beginInfoContainer h1{
+    text-align: center;
+    text-shadow: 0 0 4px  white;
+}
+
 .beginInfoContainer > p:first-child {
   color: rgba(0, 0, 0, 0.696);
   font-size: 18px;

@@ -3,8 +3,9 @@ import styles from './StartMessage.module.css';
 const StartPoint = () => {
   return (
     <div className={styles.beginInfoContainer}>
+      <h1>Photo Search</h1>
       <p>
-        This app helps you find a lot of photos based on a specific title. You
+        Photo Search app helps you find a lot of photos based on a specific title. You
         can also:
       </p>
       <ol className={styles.infoList}>

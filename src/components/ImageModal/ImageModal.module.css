@@ -1,0 +1,112 @@
+.backdrop {
+  z-index: 30;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.763);
+}
+
+.modal {
+  position: absolute;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-top: 55px;
+  padding-bottom: 54px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80vw;
+  width: 100%;
+  max-height: 90vh;
+  aspect-ratio: 3 / 4;
+}
+
+.infoContainer,
+.authorContainer {
+  position: absolute;
+  background-color: black;
+  color: rgb(166, 166, 166);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 60px 15px 10px;
+  font-family: inherit;
+}
+
+.infoContainer {
+  padding-left: 30px;
+  bottom: 0;
+  justify-content: center;
+}
+
+.authorContainer {
+  top: 0;
+  justify-content: flex-end;
+}
+
+.author,
+.text {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  gap: 10px;
+  color: rgb(166, 166, 166);
+}
+
+.author {
+  position: absolute;
+  display: flex;
+  align-items: start;
+  top: 15px;
+  left: 30px;
+}
+
+.author a,
+.text,
+.description {
+  color: inherit;
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+}
+
+.author a {
+  letter-spacing: 1.1px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.userPortfolioThumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.modalImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.description {
+  opacity: 0;
+  animation: show 2s ease-in 1s forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

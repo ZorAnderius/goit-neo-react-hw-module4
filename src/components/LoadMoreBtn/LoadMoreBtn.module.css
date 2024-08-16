@@ -1,0 +1,37 @@
+.loadBtn {
+  color: black;
+  display: block;
+  position: relative;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.344);
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: color, 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.loadBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(180deg, #8aacf48d, #365e9d7e, #2f45a4, #0b238f);
+  transition: 0.3s ease-in;
+}
+
+.loadBtn:is(:hover, :focus) {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.344);
+}
+
+.loadBtn:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}

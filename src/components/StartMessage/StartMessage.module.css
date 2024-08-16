@@ -1,0 +1,39 @@
+.beginInfoContainer {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.481);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.beginInfoContainer > p:first-child {
+  color: rgba(0, 0, 0, 0.696);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 15px;
+  font-style: italic;
+}
+
+.beginInfoContainer > p:last-child {
+  color: rgba(0, 0, 0, 0.696);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}

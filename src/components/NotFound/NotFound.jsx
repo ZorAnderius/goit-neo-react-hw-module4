@@ -4,7 +4,7 @@ const NotFound = ({ query }) => {
   return (
     <div className={styles.notFoundContainer}>
       <p>
-        Photos with<span> "{query}" </span>has been not found.
+        Photos with<span> "{query}" </span>have been not found.
       </p>
     </div>
   );
